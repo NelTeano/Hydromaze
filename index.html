@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hydromaze Water Refilling</title>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="tablogobig.png" />
+      </head>
+    <script src="index.js"></script>
+</head>
+<body>
+   <div class="container">
+        <nav class="navbar">
+            <ul>
+                <div  class="left-content"><a href="#"><li class="logo" style=" font-size: 25px; font-weight: bold; color: black;">Hydr<i class="bi bi-droplet-half"></i>Maze</li></a></div>
+                <div class="right-content"><a href="#"><li class="active" style="font-weight: bold;">Order Now </li></a>
+                <button style="background-color: white;" type="button" onclick="openLOG()"><li style="font-weight: bold; border-radius: 10px; background-color: white;">Log in</button></li></div>
+            </ul>
+        </nav>
+
+<!-----------------------------LOGIN-------------------------------------------------------------------------------------------------------------------------->
+<div id="logcontainer">
+    <div id="login">
+        <button onclick="closeLOG()" id="closebtn">X</button>
+      <p style="margin-bottom: 50px; font-size: 23px;">LOGIN</p>
+
+        <form action="">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Username"></input><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Password"></input><br>
+            <input type="checkbox" id="checkbox"> Remember me?</input><br>
+            <input type="button" id="btn-submit" value="LOGIN"></input><br>
+        </form>
+
+       <p style="text-align: right;"><a style="text-decoration: none; color:rgba(73, 71, 71, 0.63);" href="#">Forgot your password?</a></p>
+        <p style="color: rgba(73, 71, 71, 0.63); margin-top: 20px;">━━━━━━━━━━━━━OR━━━━━━━━━━━━━</p>
+        <div id="otherlog">
+            <ul>
+                <li><a href=""><i style="color: red;" class="bi bi-google"></i></a></li>
+                <li style="margin-left: 20px;"><a href=""><i style="color: #3b5998;"class="bi bi-facebook"></i></a></li>
+                <li style="margin-left: 20px;"><a href=""><i style="color: #0072b1;" class="bi bi-linkedin"></i></a></li>
+                
+            </ul>
+        </div>
+        <p  style="margin-top: 50px;text-align: center;">Need an Account? <a style="color:black; text-decoration: underline; cursor: pointer;" onclick="openSIGN()">SIGNUP</a></p>
+    </div>
+</div>
+<!-----------------------------SIGNUP-------------------------------------------------------------------------------------------------------------------------->
+<div id="signcontainer">
+    <div id="signup">
+        <button onclick="closeSIGN()" id="closebtn">X</button>
+        <p style="margin-bottom: 30px; font-size: 23px;">SIGNUP</p>
+        <form action="">
+            <label for="fname">First Name</label><br>
+            <input type="text" class="fname" placeholder="Your First Name"></input><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" class="lname" placeholder="Your Last Name"></input><br>
+            <label for="username">Username</label><br>
+            <input type="text" class="username" placeholder="Username"></input><br>
+            <label for="password">Password</label><br>
+            <input type="password" placeholder="Password" id="pass" class="password"><br>
+            <input type="checkbox" class="checkbox" onclick="showPASS()">Show Password</input><br>
+            <label for="contact">Contact NO.</label><br>
+            <input type="number" class="contact" placeholder="Contact Number"></input><br>
+            <label for="address">Address</label><br>
+            <input type="text" class="address" placeholder="Address"></input><br>
+            <label for="file" >Input ID Picture</label><br>
+            <input type="file" class="file"></input><br>
+            <input type="submit" class="btn-submit" value="SIGNUP"></input><br>
+        </form>
+    </div>
+</div>
+
+<!-----------------------------CONTENT-------------------------------------------------------------------------------------------------------------------------->
+
+   </div>
+   <div class="mascot"><img src="wateranime-removebg-preview.png"></div>
+   <div class="content-container">
+        <div class="firstcontext"><div>_________________</div><p>Welcome to Hydromaze</p></div>
+        <div class="secondcontext"><p>Welcome to Hydroze, Clean Fresh No Smell Healthy Water that you will Drink<br><br> as a water provider of different many barangays, we assured our product
+            are clean and most important<br>it is safe a healthy water is one of the need to provide for people to lived without water we cant sustain.<br><br>
+            thats why it is very important to choose the best water provider for you especially<br> in this decision your life is at risk!.<br><br>
+            Sign out Now and be the one of our clients that drinking fresh clean no smell<br> healthy water
+        </p></div>
+        <div><button onclick="openSIGN()">Sign up Today</button></div>
+   </div>
+
+<!-----------------------------LINKS-------------------------------------------------------------------------------------------------------------------------->
+
+
+   <div class="links">
+        <header><h2>Quick Links About Us!</h2></header>
+        <div>
+            <div><a href="#">View our Station in Google Map <i class="bi bi-geo-alt-fill"></i></a></div>
+            <div><a href="#">Shop Contacts in Different Platforms<i class="bi bi-person-lines-fill"></i></a></div>
+            <div><a href="#">Prices of Our Products<i class="bi bi-tags-fill"></i></a></div>
+            <div><a href="#">How to Order Step by Step Process<i class="bi bi-bag-fill"></i>
+            </a></div>
+        </div>
+   </div>
+
+<!-----------------------------CONTENT-W/-PICS-------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="containerbottom">
+        <div><img id="firstpicture" src="machine.jpg" alt="stationpicture"></div>
+        <div id="CONTEXT"><div id="line">__________</div>
+          <p>Our Machine has Six Filter that ensuring<br> our water product is 99.9% Clean and without smell,<br> for the health of our customers</p></div>
+        <div class="drop">
+        </div>
+    </div>
+
+    <div class="containerbottom2">
+        
+        <div id="CONTEXT2"><div id="line">__________</div>
+        <p>Hydromaze Water Refilling Station is Tested <br>and Certified By Hydrolab Company<br> one of the Famous Water Tester Company<br> Assuring our product is clean and safe<br>For Our Consumers</p>
+    </div>
+    <div><img id="secondpicture" src="poster.jpg" alt="hydrolabposter"></div>
+    <div class="drop2">
+    </div>
+</div>
+<!-----------------------------PRICES OF PRODUCTS-------------------------------------------------------------------------------------------------------------------------->
+<div id="price-container">
+    <div id="promos">
+        <div id="promo1">
+            <header><p>OWN USE BELOW 9PCS</p></header>
+            <footer><p style="font-size: 50px; color: #DE6445;">₱30<br></p><p style="margin-bottom: 20px;  color: #DE6445; font-weight: 600;"> PER PCS</p><br><p>✔Free Delivery<br><br>✔Lend Galloons<br><br>✔Can Pick Any Slim/Round of Gallons<br><br><p style="color: rgba(255, 0, 0, 0.702); font-weight: 600;">✖Allowed to Rush Deliver<br><br></p><p style="color: rgba(255, 0, 0, 0.702); font-weight: 600;">✖Free additional Gallons</p>
+                <button type="button">CHOOSE PACKAGE</button></footer>
+        </div>
+        <div id="promo2">
+            <header><p>MINIMUM OF 10PCS</p></header>
+            <footer><p style="font-size: 50px; color: #DE6445;">₱25<br></p><p style="margin-bottom: 20px; color: #DE6445; font-weight: 600;"> PER PCS</p><br><p>✔Free Delivery<br><br>✔With One Free Additional Gallon<br><br>✔Can Pick Any Slim/Round of Gallons<br><br>✔Lend Gallons<br><br></p><p style="color: rgba(255, 0, 0, 0.702); font-weight: 600;">✖Allowed to Rush Deliver</p>
+                <button type="button">CHOOSE PACKAGE</button></footer>          
+        </div>
+        <div id="promo3">
+            <header><p>SUPPLIER PACKAGE</p></header>
+            <footer><p style="font-size: 50px; color: #DE6445;">₱25<br></p><p style="margin-bottom: 20px;  color: #DE6445; font-weight: 600;"> PER PCS(Minimum 20 PCS)</p><br><p>✔Free Delivery<br><br>✔With Four Free Additional Gallon<br><br>✔Can Pick Any Slim/Round of Gallons<br><br>✔Lend Gallons<br><br>✔Allowed to Rush Deliver</p>
+                <button type="button">CHOOSE PACKAGE</button></footer>          
+        </div>
+    </div>
+</div>
+
+
+<!---------------------------LOCATION MAP-------------------------------------------------------------------------------------------------------------------------->
+
+<div id="map">
+    <a href="https://www.google.com/maps/place/Brentwood+Subdivision,+General+Trias,+Cavite/@14.3294632,120.9379173,14000m/data=!3m1!1e3!4m5!3m4!1s0x3397d4e999514f4f:0xe3c62b22b169c02e!8m2!3d14.3436215!4d120.9212934!5m1!1e4">Satellite View Of Where is the Station Location</a>
+    <img src="location.png">
+</div>
+
+<!---------------------------FOOTER CONTENT ARE CONTACTS-------------------------------------------------------------------------------------------------------------------------->
+<div id="footer-container">
+    <div id="footer">
+        <div class="footpart1">
+            <p style=" font-size: 40px; font-weight: bold; color: white;">Hydr<i style="color: #0372BA;" class="bi bi-droplet-half"></i>Maze</p>
+            <ul>
+               <a href="#"><li><i class="bi bi-facebook"></i></li></a>
+                <a href="#"><li><i class="bi bi-telegram"></i></li></a>
+            </ul>
+        </div>
+            <div class="footpart2">
+                <ul>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>Terms of Service</li></a>
+                </ul>
+            </div>
+
+        <div class="footpart3">
+            <h2>Contact Info</h2>
+            <ul>
+                <li><i id="contactlogo" class="bi bi-telephone"></i> +63 09156236917</li>
+                <li><i id="contactlogo"class="bi bi-geo-alt"></i> Brentwood Subdivision Brgy. Sanfrancisco General Trias Cavite</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" id="contactlogo" width="30" height="30" fill="currentColor" class="bi bi-envelope-paper" viewBox="0 0 16 16">
+                    <path d="M4 0a2 2 0 0 0-2 2v1.133l-.941.502A2 2 0 0 0 0 5.4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5.4a2 2 0 0 0-1.059-1.765L14 3.133V2a2 2 0 0 0-2-2H4Zm10 4.267.47.25A1 1 0 0 1 15 5.4v.817l-1 .6v-2.55Zm-1 3.15-3.75 2.25L8 8.917l-1.25.75L3 7.417V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5.417Zm-11-.6-1-.6V5.4a1 1 0 0 1 .53-.882L2 4.267v2.55Zm13 .566v5.734l-4.778-2.867L15 7.383Zm-.035 6.88A1 1 0 0 1 14 15H2a1 1 0 0 1-.965-.738L8 10.083l6.965 4.18ZM1 13.116V7.383l4.778 2.867L1 13.117Z"/>
+                  </svg></i><a href="mailto: jonelteano29@gmail.com">&#160;&#160;&#160;jonelteano29@gmail.com</a></li>
+            </ul>
+        </div>    
+    </div>
+</div>
+<!---------------------------FOOTER COPYRIGHT-------------------------------------------------------------------------------------------------------------------------->
+<div id="copyright">
+    <p>©Copyright 2022 All Rights Reserve Powered by: SHU Solutions</p>
+</div>
+
+
+</body>
+</html>

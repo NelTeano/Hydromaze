@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body{ 
+    background: linear-gradient(90deg, rgb(223, 227, 230) 50%, rgba(42,104,119,1) 50%);
+}
+.container{
+    background-color: #ffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar{
+    padding: 10px;
+}
+.navbar ul li{
+    display: inline;
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+    z-index: 1000px;
+    color: #9DC9BF;
+}
+.navbar ul li:hover{
+    color: black;
+    cursor: pointer;
+}
+.navbar button{
+    border: none;
+    top: 0;
+    font-size: 20px;
+}
+.navbar a{
+    text-decoration: none;
+}
+.left-content{
+    display: flex;
+    justify-content: left;
+    float: left;
+}
+.right-content{
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+.right-content li{
+    transition: 1s;
+}
+.right-content li:active{
+    border: solid black;
+}
+.logo:hover .bi-droplet-half{
+    color: #0372BA;
+}
+.bi-droplet-half{
+    transition: 0.5s;
+}
+.logo{
+    justify-content: left;
+}
+.active:hover{
+    color: black;
+    cursor: pointer;
+}
+.active:first-child{
+    background-color: #9DC9BF;
+    color: white;
+    border-radius: 10px;
+}
+/*------------------------------------------------------------*/
+.content-container{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 53rem;
+    top: 5rem;
+}
+.firstcontext{
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "National 2",sans-serif;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+.secondcontext{
+    font-family: "Tiempos",serif;
+    font-size: 22px;
+    color: white;
+
+}
+.content-container button{
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid white;
+    font-weight: bold;
+    font-family: "National 2",sans-serif;
+    background-color: transparent;
+    color: white;
+    transition: 1s ;
+}
+.content-container button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.content-container button:active{
+    background-color: black;
+    color: white;
+    transition: none;
+}
+.mascot{
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+.mascot img{
+    height: 40rem;
+    width: 40rem;
+}
+/*----------------------------LINKS-----------------------------------*/
+.links{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:850px;
+    width: 100%;
+}
+.links header, h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: "National 2 Bold",sans-serif;
+}
+.links div{
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.links a{
+    text-decoration: none;
+    padding: 30px;
+    border: solid black;
+    font-family: "National 2 Bold",sans-serif;
+    color: black;
+    font-weight: 500;
+}
+.links .bi{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.links a:hover{
+    text-decoration-line: underline;
+    
+}
+.links a:hover .bi{
+    color: cadetblue;
+    transition: 0.7s;
+}   
+.containerbottom{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(42,104,119,1) 10%, rgba(223, 227, 230) 50%);
+    position: relative;
+    top: 53rem;
+    
+}
+#firstpicture{
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 770px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#CONTEXT{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 60rem;
+    top: 7rem;
+    
+}
+.containerbottom p{
+    font-family: "National 2",sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+#line{
+    font-size: 100px;
+    color: rgb(42,104,119,1);
+    padding-bottom:10px ;
+}
+.drop{
+	position:relative;
+	padding: 0;
+	background-color: rgba(42, 104, 119, 0.705);
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
+	right: 0px;
+	left:180px;
+	top: 320px;
+	bottom: 0px;
+	margin: 0 auto;
+	width: 130px;
+	height: 130px;		
+	border-radius:0% 100% 100% 100%;
+	transform: rotate(45deg);
+	clear: left;
+}
+.containerbottom2{
+        display: flex;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(199,217,229,1) 50%, rgba(42,104,119,1) 90%);
+        position: relative;
+        top: 53rem;
+}
+#secondpicture{
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 770px;
+    left: 44rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 3px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#CONTEXT2{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: 4rem;
+    top: 7rem;
+}
+#CONTEXT2 p{
+    font-family: "National 2",sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.drop2{
+	position:absolute;
+	padding: 0;
+	background-color: rgba(42, 104, 119, 0.705);
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
+	left: 100px;
+	top: 370px;
+	width: 130px;
+	height: 130px;		
+	border-radius:0% 100% 100% 100%;
+	transform: rotate(45deg);
+}
+
+/*--------------------------------LOGIN POPUP STYLES---------------------------------------*/
+#logcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 33%;
+    top: 13%;
+    background-color: rgb(157, 201, 191);
+    border-radius: 20px;
+    box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.531);
+}
+#logcontainer::backdrop{
+    background-color: rgba(26, 24, 24, 0.537);
+}
+
+#login{
+    display: none;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+} 
+
+
+#login #username, #password{
+    height: 50px;
+    width: 445px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: white;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+#login #username:focus, #password:focus{
+    background-color: rgba(237, 229, 229, 0.959);
+    border: solid;
+}
+#username{
+    margin-bottom: 20px;
+}
+
+#checkbox{
+    margin-bottom: 30px;
+}
+#login{
+    font-family: 'Poppins', sans-serif;
+}
+#login label{
+    font-size: 20px;
+}
+#btn-submit{
+    padding: 10px 200px 10px 200px;
+    color: white;
+    background-color: #EE5684;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 20px;
+    border: #c8496f;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.531);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+#btn-submit:hover{
+    box-shadow: 0 2px 20px 0 #c8496f;
+    
+}
+#btn-submit:active{
+    background-color: black;
+    color: white;
+    padding: 7px 200px 7px 200px;
+}
+#login #closebtn{
+    float: right; 
+    padding: 5px 20px 5px 20px ;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #EE5684;
+    border: white;
+    color: white;
+}
+#login #closebtn:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.531);
+    padding: 5px 20px 5px 20px ;
+}
+#login #closebtn:active{
+    padding: 3px 18px 3px 18px ;  
+    box-shadow: 0 2px 20px 0 #c8496f;
+    background-color: black;
+}
+
+#otherlog{
+    text-align: center;
+    margin-top: 25px;
+}
+#otherlog ul li{
+    display: inline;
+    padding: 20px;
+    background-color: rgba(42, 104, 119, 0.392);
+    border-radius: 50px;
+    justify-content: space-between;
+}
+#otherlog ul li:first-child:hover{
+    box-shadow: 0 2px 10px 0 #EE5684;
+}
+#otherlog ul li:nth-child(2):hover{
+    box-shadow: 0 2px 10px 0 #3b5998;
+}
+#otherlog ul li:last-child:hover{
+    box-shadow: 0 2px 10px 0 #0072b1;
+}
+#otherlog a{
+    text-decoration: none;
+    font-size: 25px;
+}
+/*-------------------------SIGN UP STYLES----------------------------------------*/
+#signcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 33%;
+    top: 10%;
+    background-color: rgb(157, 201, 191);
+    border-radius: 20px;
+    box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.531);
+}
+#signup{
+    display: none;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#signup #closebtn{
+    float: right; 
+    padding: 5px 20px 5px 20px ;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #EE5684;
+    border: white;
+    color: white;
+    transition: 0.6s;
+}
+#signup #closebtn:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.531);
+    padding: 5px 20px 5px 20px ;
+}
+#signup #closebtn:active{
+    padding: 3px 18px 3px 18px ;  
+    box-shadow: 0 2px 20px 0 #c8496f;
+    background-color: black;
+}
+#signup .fname, .lname, .username, .password, .contact, .address{
+    height: 40px;
+    width: 445px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: white;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+#signup .fname:focus, .lname:focus, .username:focus, .password:focus, .contact:focus, .address:focus{
+    background-color: rgba(237, 229, 229, 0.665);
+    border: solid;
+}
+#signup .file{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#signup .checkbox{
+    height: 20px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+#signup label{
+    font-size: 18px;
+}
+.btn-submit{
+    padding: 10px 200px 10px 200px;
+    color: white;
+    background-color: #EE5684;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 20px;
+    border: #c8496f;
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.531);
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.btn-submit:hover{
+    box-shadow: 0 2px 20px 0 #c8496f;
+    
+}
+.btn-submit:active{
+    background-color: black;
+    color: white;
+    padding: 7px 200px 7px 200px;
+}
+/*---------------------------PACKAGE PROMOS CONTENT---------------------------------------*/
+#price-container{
+    display: flex;
+    position: relative;
+    top: 53rem;
+    background-color: #2A6877;
+}
+#price-container #promos{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+#promos div{
+    background-color: #ffff;
+    font-family: Arial, sans-serif;
+    width: 400px;
+    height: 550px;
+}
+#promos header{
+    background-color: #134D53;
+    color: white;
+    text-align: left;
+    padding: 13px;
+    font-size: 25px;
+}
+#promos footer{
+    margin-left: 70px;
+    margin-top: 60px;
+}
+#promos button{
+    margin-top: 40px;
+    padding: 18px 40px 18px 40px;
+    font-weight: bold;
+    background-color: #DB603F;
+    color: white;
+    border: none;
+}
+#promos button:hover{
+    background-color: #d24f2b;
+    cursor: pointer;
+}
+#promo1{
+    border: solid black;
+    margin-left: 100px;
+    
+}
+#promo2{
+    border: solid black;
+}
+#promo3{
+    border: solid black;
+    margin-right: 100px;
+}
+
+
+/*-------------------------LOCATION CONTENT PART---------------------------------------*/
+
+
+#map{
+    display: flex;
+    position: absolute;
+    top: 180rem;
+    width: 100%;
+    padding-bottom: 180px;
+    padding-top: 70px;
+    background-image: url(https://w0.peakpx.com/wallpaper/591/889/HD-wallpaper-white-aesthetic-lines-background-white-aesthetic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#map img{
+  width: 70rem;
+  height: 500px;
+  border: solid rgb(34, 92, 34);
+}
+#map a{
+    margin-top: 15rem;
+    text-decoration: underline;
+    font-size: 35px;
+    text-align: center;
+    color:#0072b1;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*-------------------------WEBSITE FOOTER PART---------------------------------------*/
+
+#footer-container{
+    display: flex;
+    position: absolute;
+    top: 225rem;
+    background-color: #20272F;
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+#footer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#footer ul li{
+    list-style: none;
+    
+}
+
+.footpart1 ul li{
+    display: inline-flex;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.footpart1 a{
+    color: #0372BA;
+}
+.footpart1 .bi-facebook:hover{
+    color: #3b5998;
+    transition: 1s;
+}
+.footpart1 .bi-telegram:hover{
+    color: #2AABEE;
+    transition: 1s;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.44);
+
+}
+.footpart2 ul li{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+}
+.footpart2 ul li:hover{
+    color: #0372BA;
+    transition: 0.6s;
+}
+.footpart2 a{
+    text-decoration: none;
+}
+.footpart3 ul li{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.footpart3 h2{
+    border-top: solid white;
+    color: #0372BA;
+}
+#contactlogo{
+    font-size: 30px;
+}
+.footpart3 a{
+    color: black;
+}
+.footpart3 li{
+    color: white;
+}
+.footpart3 a{
+    color: white;
+}
+.footpart3 i{
+    color: #0372BA;
+}
+#contactlogo{
+    color: #0372BA;
+}
+
+#copyright{
+    display: flex;
+    position: absolute;
+    top: 245rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a3a4b;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    padding: 20px;
+}
+#copyright p{
+    font-size: 14px;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+        *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+        }
+        
+        .right-content{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: fit-content;
+            float: right;
+        }   
+        .content-container{
+            left: 53%;
+            top: 4rem;
+            width: fit-content;
+            margin-right: 20px;
+        }
+        .mascot{
+            display: flex;
+            top: 20%;
+            left: 5%;
+        }
+        .mascot img{
+            width: 350px;
+            height: 600px;
+        }
+        .firstcontext{
+            font-size: 35px;
+        }
+        .secondcontext{
+            font-size: 22px;
+        }
+       
+        .links div{
+            margin-left: 20px;
+        }
+        .links .bi{
+           
+            font-size: 30px;
+        }
+        .links a{
+            padding-bottom: 10px;
+        }
+        .containerbottom{
+            top: 53rem;
+        }
+        #firstpicture{
+            display: flex;
+            height: 300px;
+            width: 550px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 50px;
+          
+        } 
+        #CONTEXT{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            left: 0%;
+            margin-right: 15px;
+            width: fit-content;
+            border-top: solid rgb(42,104,119,1);
+        }
+        .containerbottom p{
+            font-size: 20px;
+        }
+
+
+
+        #CONTEXT2{     
+            position: relative;
+            left: 2%;
+            top: 6rem;
+            margin-right: 30px;
+            width: fit-content;
+            border-top: solid rgb(42,104,119,1);
+        }
+        #secondpicture{
+            display: flex;
+            position: relative;
+            height: 300px;
+            width: 550px;   
+            margin-left: 15px;
+            left: 0%;
+            margin-right: 15px;
+        } 
+        #CONTEXT2 p{
+            font-size: 20px;
+        }
+      
+
+
+      
+        #promos footer{
+            margin-left: 20px;
+            margin-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        #promos button{
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 20px;
+            font-weight: bold;
+            background-color: #DB603F;
+            color: white;
+            border: none;
+        }
+        #promos div{
+            background-color: #ffff;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: 100%;
+            margin-left: 30px;
+            justify-content: space-evenly;
+        }
+        #promo1{
+            margin-left: 20px;         
+        }
+        #promo3{
+            margin-right: 20px;
+        }
+        #map{
+            display: flex;
+            position: relative;
+            top: 53rem;
+            width: 100%;
+            padding-bottom: 100px;
+            padding-top: 70px;
+            background-image: url(https://w0.peakpx.com/wallpaper/591/889/HD-wallpaper-white-aesthetic-lines-background-white-aesthetic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #map img{
+            display: flex;
+            width: 35rem;
+            height: 300px;
+            border: solid rgb(34, 92, 34);
+            margin-right: 20px;
+        }
+        #map a{
+            margin-top: 2rem;
+            margin-right: 20px;
+            margin-left: 20px;
+            text-decoration: underline;
+            font-size: 35px;
+            text-align: center;
+            color:#0072b1;
+            font-family: 'Poppins', sans-serif;
+        }
+        #footer-container{
+            position:  relative;
+            top: 53rem;         
+        }
+        #copyright{
+            display: flex;
+            position:   relative;
+            top: 53rem;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #2a3a4b;
+            color: white;
+            font-family: 'Mukta', sans-serif;
+            padding: 20px;
+        }
+        .footpart3 ul li{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .footpart2 ul li{
+            font-size: 18px;
+            text-align: left;
+        }
+        #logcontainer{     
+            left: 20%;
+        }
+        #signcontainer{
+            left: 20%;
+        }
+       
+       
+
+
+        .drop2{display: none;}
+        #line{ display: none;}
+        .drop{display: none;}
+       
+ }
+
